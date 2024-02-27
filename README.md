@@ -96,7 +96,7 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 
 ## Сумісність з браузерами та розширеннями
 
-Фільтри Ukrainian Ad Filter, Ukrainian Annoyance Filter та Ukrainian Privacy Filter створені з використанням специфічного синтаксису фільтрації розширення [uBlock Origin](https://github.com/gorhill/uBlock) (uBO), при цьому, більшість правил фільтрації все ж сумісні як з іншими популярними сторонніми розширеннями (наприклад, [Adblock Plus](https://adblockplus.org/)), так і з браузерами з вбудованими модулями фільтрації контенту ([Brave](https://brave.com/), [Vivaldi](https://vivaldi.com/)).
+Фільтри `Ukrainian Ad Filter`, `Ukrainian Annoyance Filter` та `Ukrainian Privacy Filter` створені з використанням специфічного синтаксису фільтрації розширення [uBlock Origin](https://github.com/gorhill/uBlock) (uBO), при цьому, більшість правил фільтрації все ж сумісні як з іншими популярними сторонніми розширеннями (наприклад, [Adblock Plus](https://adblockplus.org/)), так і з браузерами з вбудованими модулями фільтрації контенту ([Brave](https://brave.com/), [Vivaldi](https://vivaldi.com/)).
 
 Однак, з точки зору ефективності, приватності та безпеки, найбільш оптимальним є використання розширення [uBlock Origin](https://ublockorigin.com/) разом з браузером [Firefox](https://www.mozilla.org/firefox/).
 
