@@ -1,6 +1,6 @@
 # Ukrainian Filters
 
-Filters specifically designed for [uBlock Origin](https://github.com/gorhill/uBlock) (uBO) that automatically remove unwanted content from websites, including ads, irritating elements, trackers and harmful scripts.
+Filters specifically designed for [uBlock Origin](https://github.com/gorhill/uBlock) (uBO) that automatically remove unwanted content from Ukrainian websites, including ads, irritating elements, trackers and harmful scripts.
 
 ## License
 
