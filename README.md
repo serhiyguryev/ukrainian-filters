@@ -64,6 +64,8 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 Додаткова інструкція доступна за адресою: [https://help.adblockplus.org/hc/en-us/articles/360062859913-Add-a-custom-filter](https://help.adblockplus.org/hc/en-us/articles/360062859913-Add-a-custom-filter)
 </details>
 
+<br>
+
 Браузери з вбудованими модулями фільтрації контенту:
 
 ### Brave
