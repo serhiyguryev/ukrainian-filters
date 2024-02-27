@@ -1,0 +1,100 @@
+! [uBlock Origin; Adblock Plus 3.2]
+! Title: Ukrainian Annoyance Filters
+! Description: Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)
+! Version: 20240227.01
+! Last modified: Tue, 27 February 2024 15:47 EET
+! Expires: 5 days
+! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
+!
+! Homepage: https://github.com/serhiyguryev/ukrainian-filters
+! Issues: https://github.com/serhiyguryev/ukrainian-filters/issues
+!
+! !!!!!!!!!!!!!!!
+! GENERAL RULES
+! !!!!!!!!!!!!!!!
+!
+##.cky-consent-container
+##.cky-overlay
+##.cookie-label
+##.cookie-label-wrapprer
+##.cookie-toast
+##.cookie-toast-wrap
+##.cookie-toaster
+##.cookies-wrap
+##.cookies-wrapper
+##.CookieWarning
+##.js-cookies
+##[data-testid="consent-banner"]
+##[type="cookie-notification"]
+###cl-consent
+###cmplz-cookiebanner-container
+###cookie-banner
+###cookie-consent
+###cookie-notice
+###cookieBar
+###cookieBox
+###cookieChoiceInfo
+###cookieConsent
+###cookiePopupWrapper
+###cookiePrompt
+###cookiePromptWrapper
+###cookiesdiv
+###CookiesDiv
+###EU_Cookie_Message
+###gdpr-disclaimer
+###onetrust-consent-sdk
+##dialog.cookie-policy
+!
+! !!!!!!!!!!!!!!!
+! UKRAINIAN WEBSITES
+!  > Page-Specific Rules
+! !!!!!!!!!!!!!!!
+!
+ain.ua###PopupSignupForm_0
+babel.ua##.js-cookies-modal:has(.c-cookies-box)
+censor.net##.stpd_cmp
+censor.net###usage_notice
+diia.gov.ua,u24.gov.ua##.cookies
+football24.ua##.privete-polisy
+kyivpost.com##.stpd_cmp
+olx.ua##div[data-testid="cookies-overlay__container"]
+rbc.ua##.privacy
+sud.ua##.bottom_style_bnr
+telegraf.com.ua##.c-cookies
+ukrposhta.ua##.cookie-message
+volia.com##.agreeCookie\.component__cookieWrapper
+zaxid.net###pushNotificationBanner
+!
+! !!!!!!!!!!!!!!!
+! POPULAR FOREIGN WEBSITES
+!  > Page-Specific Rules
+! !!!!!!!!!!!!!!!
+!
+adobe.com,dribbble.com,reddit.com###credential_picker_container
+artstation.com###google_onetap_container
+bbc.com##div:has(> div > div > ul > li > button[data-cookie-banner="accept"])
+bbc.com##div[class*="-ConsentBanner"]
+behance.net###google-login-container
+behance.net##div[class^="Banner-bannerContainer"]
+behance.net##div[class^="FloatingChecklist"]
+deepl.com##.w-full:has(div[class^="ProBanner"])
+deepl.com##div.p-8:has(aside[class^="Quotes-module"])
+deepl.com##div[data-testid="dl-cookieBanner"]
+deepl.com##main.relative.mx-auto > div.absolute.empty\:hidden
+developer.mozilla.org##.top-banner
+dribbble.com##.announcements
+dribbble.com##.sticky-pro-upsell-widget
+forbes.com###ketch-consent-overlay
+forbes.com###lanyard_root
+itsfoss.com##.apester-unit
+mozilla.org##.mzp-c-sticky-promo
+theverge.com##+js(set-cookie, _duet_gdpr_acknowledged, 1)
+tumblr.com##.tmblr-iframe--gdpr-banner
+virustotal.com##.footer-notifications
+!
+! !!!!!!!!!!!!!!!
+! POPULAR FOREIGN WEBSITES
+!  > Exceptions
+! !!!!!!!!!!!!!!!
+!
+cnn.com#@##onetrust-consent-sdk
