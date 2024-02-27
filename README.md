@@ -4,39 +4,47 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 ## Фільтри
 
-**Ukrainian Ad Filter** — видаляє рекламу з українських сайтів.
+### Ukrainian Ad Filter
+
+Фільтр видаляє рекламу з українських сайтів.
 
 ```
 https://www.awwwwesome.org/data/filters/UF/ads.txt
 ```
 
-**Ukrainian Annoyance Filter** — блокує дратівливі елементи на українських та деяких популярних іноземних сайтах (повідомлення про файли cookie, спливаючі вікна, банери тощо).
+### Ukrainian Annoyance Filter
+
+Фільтр блокує дратівливі елементи на українських та деяких популярних іноземних сайтах (повідомлення про файли cookie, спливаючі вікна, банери тощо).
 
 ```
 https://www.awwwwesome.org/data/filters/UF/annoyances.txt
 ```
 
-**Ukrainian Privacy Filter** — блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в Інтернеті.
+### Ukrainian Privacy Filter
+
+Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в Інтернеті.
 
 ```
 https://www.awwwwesome.org/data/filters/UF/privacy.txt
 ```
 
-**Ukrainian Security Filter (Український безпековий фільтр)** — це фільтр шкідливих веб-ресурсів (фішинг, онлайн-шахрайство, шкідливе програмне забезпечення тощо), що орієнтовані на громадян України. Фільтр створений та підтримується командою громадської організації «[Соціальні інноватори](https://github.com/braveinnovators/ukrainian-security-filter)». На відміну від трьох вищезгаданих фільтрів, цей фільтр сумісний з усіма браузерами, розширеннями та іншим програмним забезпеченням, що підтримує синтаксис AdBlock (див. розділ «Сумісність з браузерами та розширеннями»).
+### Ukrainian Security Filter (Український безпековий фільтр)
+
+Це фільтр шкідливих веб-ресурсів (фішинг, онлайн-шахрайство, шкідливе програмне забезпечення тощо), що орієнтовані на громадян України. Фільтр створений та підтримується командою громадської організації «[Соціальні інноватори](https://github.com/braveinnovators/ukrainian-security-filter)». На відміну від трьох вищезгаданих фільтрів, цей фільтр сумісний з усіма браузерами, розширеннями та іншим програмним забезпеченням, що підтримує синтаксис AdBlock (див. розділ «Сумісність з браузерами та розширеннями»).
 
 ```
 https://www.awwwwesome.org/data/filters/USF/adblock.txt
 ```
 
-### Сумісність з браузерами та розширеннями
+## Сумісність з браузерами та розширеннями
 
 Фільтри Ukrainian Ad Filter, Ukrainian Annoyance Filter та Ukrainian Privacy Filter створені з використанням специфічного синтаксису фільтрації розширення [uBlock Origin](https://github.com/gorhill/uBlock) (uBO), при цьому, більшість правил фільтрації все ж сумісні як з іншими популярними сторонніми розширеннями (наприклад, [Adblock Plus](https://adblockplus.org/)), так і з браузерами з вбудованими модулями фільтрації контенту ([Brave](https://brave.com/), [Vivaldi](https://vivaldi.com/)).
 
 Однак, з точки зору ефективності, приватності та безпеки, найбільш оптимальним є використання розширення [uBlock Origin](https://ublockorigin.com/) разом з браузером [Firefox](https://www.mozilla.org/firefox/).
 
-### Як імпортувати фільтри
+## Як імпортувати фільтри
 
-#### uBlock Origin
+### uBlock Origin
 
 <details>
 <summary>Windows, macOS та Linux</summary>
@@ -47,7 +55,7 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 Додаткова інструкція доступна за адресою: [https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
 </details>
 
-#### Adblock Plus
+### Adblock Plus
 
 <details>
 <summary>Windows, macOS та Linux</summary>
@@ -58,7 +66,7 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 Додаткова інструкція доступна за адресою: [https://help.adblockplus.org/hc/en-us/articles/360062859913-Add-a-custom-filter](https://help.adblockplus.org/hc/en-us/articles/360062859913-Add-a-custom-filter)
 </details>
 
-#### Brave
+### Brave
 
 <details>
 <summary>Windows, macOS та Linux</summary>
@@ -77,7 +85,7 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 Додаткова інструкція доступна за адресою: https://brave.com/privacy-updates/10-custom-filter-lists/
 </details>
 
-#### Vivaldi
+### Vivaldi
 
 <details>
 <summary>Windows, macOS та Linux</summary>
