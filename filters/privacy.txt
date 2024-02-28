@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 20240227.01
-! Last modified: Tue, 27 February 2024 15:47 EET
+! Version: 20240228.01
+! Last modified: Wed, 28 February 2024 18:31 EET
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -17,9 +17,9 @@
 ||connect.facebook.net^$third-party,domain=5.ua|ain.business|ain.ua|apostrophe.ua|chytomo.com|defence-ua.com|dumskaya.net|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|holosameryky.com|imi.org.ua|inforesist.org|interfax.com.ua|isport.ua|istpravda.com.ua|kyivpost.com|mc.today|mezha.net|mil.in.ua|nachasi.com|nv.ua|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|slovoidilo.ua|suspilne.media|tsn.ua|ukrinform.ua|village.com.ua|xsport.ua|zaxid.net
 ||graph.facebook.com^$third-party,domain=petrimazepa.com|platfor.ma|slovoidilo.ua|ukrinform.ua|zn.ua
 ! disqus.com
-||disqus.com^$third-party,domain=itc.ua|mezha.media|nashigroshi.org|petrimazepa.com|radiosvoboda.org
+||disqus.com^$third-party
 ! sharethis.com
-||sharethis.com^$third-party,domain=defence-ua.com
+||sharethis.com^$third-party
 ! fixidle.com
 ||fixidle.com^$third-party
 ! inmobi.com
@@ -39,6 +39,7 @@
 !
 5.ua,apostrophe.ua,interfax.com.ua,mil.in.ua##.fb-comments:remove()
 5.ua##h2:has-text(ПРОКОМЕНТУЙТЕ):remove()
+9to5linux.com###disqus_thread:remove()
 censor.net##.news-comments-wrapp:remove()
 defence-ua.com###comments_container:remove()
 dev.ua,mezha.media,radiosvoboda.org###comments:remove()
