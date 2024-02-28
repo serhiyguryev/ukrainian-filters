@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240228.01
-! Last modified: Wed, 28 February 2024 18:31 EET
+! Version: 20240228.02
+! Last modified: Wed, 28 February 2024 22:22 EET
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -15,6 +15,7 @@
 !
 ||exchange.informer.ua^$third-party
 ||mediabrama.com^$third-party
+||receivedachest.com^$third-party
 ||sinoptik.ua/informers_js.php?*$third-party
 ||stteeruptowind.com^$third-party
 !
@@ -57,6 +58,8 @@ dumskaya.net##.hideprint
 dumskaya.net##noindex
 epravda.com.ua,pravda.com.ua##div[class*="banner"]
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
+focus.ua##div.o-block__inner:has(div[id*="ScriptRoot"])
+focus.ua##div.u-d-h-600:has(div[id*="ScriptRoot"])
 football.ua,ukurier.gov.ua##.banner
 football.ua##.banner ~ .separator
 football.ua##.top-banner
@@ -91,6 +94,7 @@ liga.net##div.ad
 liga.net##div.article-footer__widget.b-blocks
 liga.net##div.article-footer__widget.b-subs
 mc.today##[data-coursestyle]
+megapeer.vip###adwile
 mezha.media##.block-novyny-partneriv
 nachasi.com##div.sticky-zone:has-text(Блоги компаній)
 nachasi.com##div.style_poster__MF3pg:has(.style_content__3CPKg)
@@ -110,6 +114,8 @@ tabletki.ua##h3.com__panel-header:has-text('реклама')
 telegraf.com.ua##.tgr-ads
 telegraf.com.ua##div[data-text="Новини партнерів"]
 texty.org.ua##.ad-banner-aside:remove()
+thepage.ua##div.news-list__item:has(div[class*="news-tag company_news"])
+thepage.ua##div.news-list__item:has(div[class*="news-tag partner_material"])
 tsn.ua##.c-aside__port
 tsn.ua##aside.u-divider--t:has(iframe[src*="banners/partner-news?"])
 ua-football.com##.asside:has(div.topBook)
