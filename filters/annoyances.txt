@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)
-! Version: 20240301.02
-! Last modified: Fri, 01 March 2024 13:31 EET
+! Version: 20240301.03
+! Last modified: Fri, 01 March 2024 19:31 EET
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -15,6 +15,7 @@
 !
 ##.cky-consent-container
 ##.cky-overlay
+##.cookie_banner
 ##.cookie-label
 ##.cookie-label-wrapprer
 ##.cookie-toast
@@ -52,9 +53,20 @@
 ! !!!!!!!!!!!!!!!
 !
 ain.ua###PopupSignupForm_0
+anc.ua##div.cookies--popup-background
+anc.ua##div.dropdown-accept-city
+antoshka.ua##div.promotion-popup
+auchan.ua##div.cookie-agreement-wrapper
+auchan.ua##div.right-banner_root__35ahv
 babel.ua##.js-cookies-modal:has(.c-cookies-box)
+bankvostok.com.ua##div.cookies-accept-block
+bi.ua##div.cookiePopup
 censor.net##.stpd_cmp
 censor.net###usage_notice
+comfy.ua###credential_picker_container
+comfy.ua##div.ask-city-desktop
+comfy.ua##div.info-popup__content
+comfy.ua##div.weblayer--box-subscription-1
 diia.gov.ua,u24.gov.ua##.cookies
 dom.ria.com,moyo.ua,rozetka.com.ua###credential_picker_container
 dom.ria.com##div.c-notifier:has(input[id="gdpr_settings"])
@@ -65,11 +77,18 @@ kyivstar.ua##div[class*="RegionalityPopover_regionality"]
 olx.ua##div[data-testid="cookies-overlay__container"]
 portmone.com.ua##.ptm-banner__cat-fish
 portmone.com.ua##app-cookies-modal
+privatbank.ua##+js(set-cookie, analytics_allowed, 0)
+privatbank.ua##+js(set-cookie, marketing_allowed, 0)
+privatbank.ua##div.cookies
 radiosvoboda.org##div.slide-in-wg
 rbc.ua##.privacy
+ringoo.ua##div.cookie
+samsung.com##div.cookie-bar
 silpo.ua##.cookie-banner
 sud.ua##.bottom_style_bnr
+tascombank.ua##div.cookie-message
 telegraf.com.ua##.c-cookies
+ukrgasbank.com##div.cookies-popup
 ukrposhta.ua##.cookie-message
 volia.com##.agreeCookie\.component__cookieWrapper
 wayforpay.com###cookiesNoticeContainer
@@ -80,7 +99,7 @@ zaxid.net###pushNotificationBanner
 !  > Page-Specific Rules
 ! !!!!!!!!!!!!!!!
 !
-adobe.com,dribbble.com,freepik.com,reddit.com###credential_picker_container
+adobe.com,dribbble.com,dropbox.com,freepik.com,reddit.com###credential_picker_container
 artstation.com###google_onetap_container
 bbc.com##div:has(> div > div > ul > li > button[data-cookie-banner="accept"])
 bbc.com##div[class*="-ConsentBanner"]
