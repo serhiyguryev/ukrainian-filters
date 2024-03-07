@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 20240301.04
-! Last modified: Fri, 01 March 2024 19:31 EET
+! Version: 20240307.01
+! Last modified: Thu, 07 March 2024 15:06 EET
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -14,7 +14,7 @@
 ! !!!!!!!!!!!!!!!
 !
 ! facebook.com
-||connect.facebook.net^$third-party,domain=5.ua|ain.business|ain.ua|apostrophe.ua|chytomo.com|defence-ua.com|dumskaya.net|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|holosameryky.com|imi.org.ua|inforesist.org|interfax.com.ua|ipay.ua|isport.ua|istpravda.com.ua|kyivpost.com|mc.today|mezha.net|mil.in.ua|nachasi.com|nv.ua|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|slovoidilo.ua|suspilne.media|tsn.ua|ukrinform.ua|village.com.ua|xsport.ua|zaxid.net
+||connect.facebook.net^$third-party,domain=5.ua|ain.business|ain.ua|apostrophe.ua|armyinform.com.ua|chytomo.com|defence-ua.com|dumskaya.net|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|holosameryky.com|imi.org.ua|inforesist.org|interfax.com.ua|ipay.ua|isport.ua|istpravda.com.ua|kyivpost.com|mc.today|mezha.net|mil.in.ua|nachasi.com|nv.ua|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|slovoidilo.ua|storinka.com.ua|suspilne.media|tsn.ua|ukrinform.ua|village.com.ua|xsport.ua|zaxid.net
 ||graph.facebook.com^$third-party,domain=petrimazepa.com|platfor.ma|slovoidilo.ua|ukrinform.ua|universalbank.com.ua|zn.ua
 ||facebook.com/plugins/likebox.php?*$third-party,domain=fn.ua
 ||facebook.com/plugins/post.php?*$third-party,domain=radiosvoboda.org
@@ -44,14 +44,15 @@
 ! !!!!!!!!!!!!!!!
 !
 5.ua,apostrophe.ua,interfax.com.ua,mil.in.ua##.fb-comments:remove()
+dev.ua,mezha.media,radiosvoboda.org###comments:remove()
+espreso.tv,zaxid.net##.facebook-comments:remove()
+! !!!!!!!!!!!!!!!
 5.ua##h2:has-text(ПРОКОМЕНТУЙТЕ):remove()
 9to5linux.com###disqus_thread:remove()
 censor.net##.news-comments-wrapp:remove()
 champion.com.ua##div.comments:remove()
 defence-ua.com###comments_container:remove()
-dev.ua,mezha.media,radiosvoboda.org###comments:remove()
 epravda.com.ua##.block_comments:remove()
-espreso.tv,zaxid.net##.facebook-comments:remove()
 football.ua###commentsArea:remove()
 football24.ua##.comments_button:remove()
 football24.ua###comments-widget:remove()
