@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240228.02
-! Last modified: Wed, 28 February 2024 22:22 EET
+! Version: 20240307.01
+! Last modified: Thu, 07 March 2024 15:06 EET
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -35,6 +35,11 @@ censor.net,epravda.com.ua,eurointegration.com.ua,gazeta.ua,i.ua,inforesist.org,i
 ! PAGE-SPECIFIC RULES
 ! !!!!!!!!!!!!!!!
 !
+chytomo.com,defence-ua.com,zn.ua##div[class^="banner"]
+football24.ua,zaxid.net##.adv-between-newses
+football24.ua,zaxid.net##div[id^="videoAdvWrapper"]
+unian.info,unian.net,unian.ua,vctr.media##.banner-container
+! !!!!!!!!!!!!!!!
 24tv.ua##app-default-news.news-wrapper:has(app-custom-adv-label > div > div.custom-adv-label)
 24tv.ua##app-video-adv-block
 24tv.ua##div.adv-wrapper
@@ -45,7 +50,6 @@ apostrophe.ua##.advertinline
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
 censor.net##.right-sidebar div[style^="width: 300px; "]
-chytomo.com,defence-ua.com,zn.ua##div[class^="banner"]
 defence-ua.com##.share-news
 defence-ua.com##div.content > hr
 defence-ua.com##div.content > hr > hr
@@ -63,8 +67,6 @@ focus.ua##div.u-d-h-600:has(div[id*="ScriptRoot"])
 football.ua,ukurier.gov.ua##.banner
 football.ua##.banner ~ .separator
 football.ua##.top-banner
-football24.ua,zaxid.net##.adv-between-newses
-football24.ua,zaxid.net##div[id^="videoAdvWrapper"]
 football24.ua##.adv-insert
 football24.ua##div.next-article:has(div.custom-adv-label)
 gazeta.ua##.informer
@@ -109,6 +111,8 @@ rbc.ua##[id^="bn_"]
 sinoptik.ua##head > style:empty:style(all: inherit !important)
 sport24.ua##app-default-news:has(app-adv-news-label)
 sport24.ua##div[class^="adv-wrapper"]
+storinka.com.ua##div.share
+storinka.com.ua##div.widget:not([class$="hidden-xs"])
 tabletki.ua##div.com__panel-container:has(a[rel*="sponsored"])
 tabletki.ua##h3.com__panel-header:has-text('реклама')
 telegraf.com.ua##.tgr-ads
@@ -119,16 +123,17 @@ thepage.ua##div.news-list__item:has(div[class*="news-tag partner_material"])
 tsn.ua##.c-aside__port
 tsn.ua##aside.u-divider--t:has(iframe[src*="banners/partner-news?"])
 ua-football.com##.asside:has(div.topBook)
+ua.news##aside[class^="promo"]
 ukr.net##.fixed-block > div[class] ~ div
 ukr.net##.placeholder
 ukrinform.ua##.socialBlockSlide
 ukrinform.ua##div.googleCompanion
 ukrinform.ua##div.partner
-unian.info,unian.net,unian.ua,vctr.media##.banner-container
 unian.info,unian.net,unian.ua##.newsfeed__banner
 unian.info,unian.net,unian.ua##.partner-news
 unn.ua###ads-sidebar
 village.com.ua##.post-additions
+vogue.ua##div[id^="admixer_"]
 xsport.ua##.bookmaker-new
 yesport.com.ua##app-adv-placeholder
 zaxid.net##.adv-news-within
