@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240310.01
-! Last modified: Sun, 10 March 2024 15:13 EET
+! Version: 20240314.01
+! Last modified: Thu, 14 March 2024 01:04 EET
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -64,6 +64,7 @@ epravda.com.ua,pravda.com.ua##div[class*="banner"]
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
 focus.ua##div.o-block__inner:has(div[id*="ScriptRoot"])
 focus.ua##div.u-d-h-600:has(div[id*="ScriptRoot"])
+fondy.ua##div.wpbs-ad-banner
 football.ua,ukurier.gov.ua##.banner
 football.ua##.banner ~ .separator
 football.ua##.top-banner
