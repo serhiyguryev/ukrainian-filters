@@ -40,41 +40,15 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 
 ## Сумісність з браузерами та розширеннями
 
-Фільтри `Ukrainian Ad Filter`, `Ukrainian Annoyance Filter` та `Ukrainian Privacy Filter` створені з використанням специфічного синтаксису фільтрації розширення [uBlock Origin](https://github.com/gorhill/uBlock) (uBO), при цьому, більшість правил фільтрації все ж сумісні як з іншими популярними сторонніми розширеннями (наприклад, [Adblock Plus](https://adblockplus.org/)), так і з браузерами з вбудованими модулями фільтрації контенту ([Brave](https://brave.com/), [Vivaldi](https://vivaldi.com/)).
+Фільтри `Ukrainian Ad Filter`, `Ukrainian Annoyance Filter` та `Ukrainian Privacy Filter` створені з використанням специфічного синтаксису фільтрації розширення [uBlock Origin](https://github.com/gorhill/uBlock) (uBO), при цьому, більшість правил фільтрації все ж сумісні як з іншими популярними сторонніми розширеннями, так і з браузерами з вбудованими модулями фільтрації контенту.
 
-Однак, з точки зору ефективності, приватності та безпеки, найбільш оптимальним є використання розширення [uBlock Origin](https://ublockorigin.com/) разом з браузером [Firefox](https://www.mozilla.org/firefox/).
+Однак, з точки зору ефективності, приватності та безпеки, найбільш оптимальним для користувачів персональних комп'ютерів буде використання розширення [uBlock Origin](https://ublockorigin.com/) разом з браузером [Firefox](https://www.mozilla.org/firefox/).
 
-## Як імпортувати фільтри
+Незважаючи на те, що браузер Firefox підтримує роботу розширень і на мобільних пристроях, альтернативою для мобільних пристроїв може стати використання браузера [Brave](https://brave.com/), який має власний модуль фільтрації контенту та вбудовані різноманітні функції захисту.
 
-Розширення (add-ons):
+### Як імпортувати фільтри
 
-### uBlock Origin
-
-<details>
-<summary>Windows, macOS та Linux</summary>
-
-1. Відкрити меню `Preferences` розширення uBlock Origin, клацнути мишею на вкладку `Filter lists` і прокрутити до розділу `Custom`
-2. Клацнути мишею на `Import...` і у поле вводу вставити скопійовані адреси необхідних фільтрів, зберігши зміни.
-
-Додаткова інструкція доступна за адресою: [https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
-</details>
-
-### Adblock Plus
-
-<details>
-<summary>Windows, macOS та Linux</summary>
-
-1. Відкрити меню налаштування розширення Adblock Plus, клацнути мишею на вкладку `Advanced` і прокрутити до розділу `My filter list`
-2. У поле вводу вставити скопійовані адреси необхідних фільтрів, зберігши зміни.
-
-Додаткова інструкція доступна за адресою: [https://help.adblockplus.org/hc/en-us/articles/360062859913-Add-a-custom-filter](https://help.adblockplus.org/hc/en-us/articles/360062859913-Add-a-custom-filter)
-</details>
-
-<br>
-
-Браузери з вбудованими модулями фільтрації контенту:
-
-### Brave
+#### Brave
 
 <details>
 <summary>Windows, macOS та Linux</summary>
@@ -90,15 +64,15 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 2. У розділі меню `Brave Shields & privacy` відкрити `Content filtering`, далі `Add custom filter list` і у поле вводу вставити скопійовані адреси необхідних фільтрів, зберігши зміни шляхом натискання на кнопку `Add`.
 </details>
 
-### Vivaldi
+#### uBlock Origin
 
 <details>
 <summary>Windows, macOS та Linux</summary>
 
-1. Перейдіть у `Налаштування` > `Приватність` > `Блокування трекерів та реклами` > `Показати списки`
-2. Натисніть на кнопку `Додати список`, вставте скопійовані адреси необхідних фільтрів та натисніть кнопку `Імпорт`.
+1. Відкрити меню `Preferences` розширення uBlock Origin, клацнути мишею на вкладку `Filter lists` і прокрутити до розділу `Custom`
+2. Клацнути мишею на `Import...` і у поле вводу вставити скопійовані адреси необхідних фільтрів, зберігши зміни.
 
-Додаткова інструкція доступна за адресою: [https://help.vivaldi.com/uk/desktop-uk/privacy-uk/tracking-and-ad-blocking/](https://help.vivaldi.com/uk/desktop-uk/privacy-uk/tracking-and-ad-blocking/)
+Додаткова інструкція доступна за адресою: [https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
 </details>
 
 ## Підтримати проект
