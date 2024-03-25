@@ -79,8 +79,8 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 
 Ви можете підтримати подальший розвиток цього проекту, обравши зручний для вас спосіб перерахування донатів:
 
-* **Bitcoin**: bc1q6qtnwc2pdktvl48mr9hf0qmhaxfm7xseftp78a
-* **Ethereum**: 0x185e4FB1f662223B011dedbBd42A444891b094f5
+* **Bitcoin (BTC)**: bc1q6qtnwc2pdktvl48mr9hf0qmhaxfm7xseftp78a
+* **Ether (ETH)**: 0x185e4FB1f662223B011dedbBd42A444891b094f5
 
 ## Ліцензія
 
