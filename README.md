@@ -42,9 +42,9 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 
 Фільтри `Ukrainian Ad Filter`, `Ukrainian Annoyance Filter` та `Ukrainian Privacy Filter` створені з використанням специфічного синтаксису фільтрації розширення [uBlock Origin](https://github.com/gorhill/uBlock) (uBO), при цьому, більшість правил фільтрації все ж сумісні як з іншими популярними сторонніми розширеннями, так і з браузерами з вбудованими модулями фільтрації контенту.
 
-Однак, з точки зору ефективності, приватності та безпеки, найбільш оптимальним для користувачів персональних комп'ютерів буде використання розширення [uBlock Origin](https://ublockorigin.com/) разом з браузером [Firefox](https://www.mozilla.org/firefox/).
+Однак, з точки зору ефективності, приватності та безпеки, найбільш оптимальним для користувачів персональних комп'ютерів буде використання розширення [uBlock Origin](https://ublockorigin.com/) разом з браузером [Firefox](https://www.mozilla.org/firefox/) (якщо ви не плануєте змінювати браузер, все одно розгляньте можливість встановлення саме розширення uBlock Origin).
 
-Незважаючи на те, що браузер Firefox підтримує роботу розширень і на мобільних пристроях, альтернативою для мобільних пристроїв може стати використання браузера [Brave](https://brave.com/), який має власний модуль фільтрації контенту та вбудовані різноманітні функції захисту.
+Браузер Firefox підтримує роботу розширень і на мобільних пристроях, проте, розширення uBlock Origin працює лише на ОС Android. Тому альтернативою для мобільних пристроїв, що працюють на базі ОС Android та iOS, може стати використання браузера [Brave](https://brave.com/), який має власний модуль фільтрації контенту та вбудовані різноманітні функції захисту.
 
 ### Як імпортувати фільтри
 
@@ -79,10 +79,8 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 
 Ви можете підтримати подальший розвиток цього проекту, обравши зручний для вас спосіб перерахування донатів:
 
-* [PayPal або дебетова/кредитна картка](https://www.paypal.com/donate/?hosted_button_id=AQ9BB34WHFADC)
-* [Платформа Ko-fi](https://ko-fi.com/serhiyguryev)
-
-<a href="https://ko-fi.com/serhiyguryev" title="Support me on Ko-fi"><img src="assets/kofi_bg_tag_white.svg" alt="Support me on Ko-fi" width="200px" style="display: inline-block; margin: 5px 0;"></a>
+* Bitcoin: bc1q6qtnwc2pdktvl48mr9hf0qmhaxfm7xseftp78a
+* Ethereum: 0x185e4FB1f662223B011dedbBd42A444891b094f5
 
 ## Ліцензія
 
