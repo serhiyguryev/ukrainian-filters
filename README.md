@@ -44,7 +44,7 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 
 Однак, з точки зору ефективності, приватності та безпеки, найбільш оптимальним для користувачів персональних комп'ютерів буде використання розширення [uBlock Origin](https://ublockorigin.com/) разом з браузером [Firefox](https://www.mozilla.org/firefox/) (якщо ви не плануєте змінювати браузер, все одно розгляньте можливість встановлення саме розширення uBlock Origin).
 
-Браузер Firefox підтримує роботу розширень і на мобільних пристроях, проте, розширення uBlock Origin працює лише на ОС Android. Тому альтернативою для мобільних пристроїв, що працюють на базі ОС Android та iOS, може стати використання браузера [Brave](https://brave.com/), який має власний модуль фільтрації контенту та вбудовані різноманітні функції захисту.
+Браузер Firefox підтримує роботу розширень і на мобільних пристроях, проте, розширення uBlock Origin працює лише на ОС Android. Тому альтернативою для мобільних пристроїв, що працюють на базі ОС Android та iOS, може стати використання браузера [Brave](https://brave.com/), який має власний модуль фільтрації контенту.
 
 ### Як імпортувати фільтри
 
@@ -84,4 +84,4 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 
 ## Ліцензія
 
-На Ukrainian Filters (Українські фільтри) поширюються умови ліцензії [GNU General Public License v3.0](https://github.com/spicy-pixels/ultimatelist/blob/main/LICENSE)
+На Ukrainian Filters (Українські фільтри) поширюються умови ліцензії [GNU General Public License v3.0](https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE)
