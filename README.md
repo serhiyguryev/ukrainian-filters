@@ -24,7 +24,7 @@ https://www.awwwwesome.org/data/filters/UF/annoyances.txt
 
 Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в Інтернеті.
 
-**Увага**: цей фільтр видаляє скрипти та html-елементи систем коментування (Disqus, Facebook Comments Plugin тощо) на новинних та деяких інших сайтах. Якщо для вас це неприйнятно, не використовуйте цей фільтр.
+> Цей фільтр видаляє скрипти та html-елементи систем коментування (Disqus, Facebook Comments Plugin тощо) на новинних та деяких інших сайтах. Якщо для вас це неприйнятно, не використовуйте цей фільтр.
 
 ```
 https://www.awwwwesome.org/data/filters/UF/privacy.txt
@@ -79,6 +79,7 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 
 Ви можете підтримати подальший розвиток цього проекту, обравши зручний для вас спосіб перерахування донатів:
 
+* **Дебетова/кредитна картка**: [https://donatello.to/serhiyguryev](https://donatello.to/serhiyguryev)
 * **Bitcoin (BTC)**: bc1q6qtnwc2pdktvl48mr9hf0qmhaxfm7xseftp78a
 * **Ether (ETH)**: 0x185e4FB1f662223B011dedbBd42A444891b094f5
 
