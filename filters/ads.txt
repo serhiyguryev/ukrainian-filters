@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240324.01
-! Last modified: Sun, 24 March 2024 00:06 EET
+! Version: 20240326.01
+! Last modified: Tue, 26 March 2024 21:22 EET
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -24,6 +24,7 @@
 ! !!!!!!!!!!!!!!!
 !
 bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,gazeta.ua,i.ua,inforesist.org,isport.ua,liga.net,nv.ua,pravda.com.ua,ukr.net##^script:has-text('"Shadow')
+football24.ua##^script:has-text('manageMembranaAdvWrappers')
 !
 ! !!!!!!!!!!!!!!!
 ! GENERAL RULES
@@ -35,14 +36,13 @@ bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,gazeta.ua,i.ua,infor
 ! PAGE-SPECIFIC RULES
 ! !!!!!!!!!!!!!!!
 !
+24tv.ua,football24.ua,sport24.ua,zaxid.net##[class*="adv-"]
 chytomo.com,defence-ua.com,zn.ua##div[class^="banner"]
-football24.ua,zaxid.net##.adv-between-newses
-football24.ua,zaxid.net##div[id^="videoAdvWrapper"]
+football24.ua,zaxid.net##[id*="AdvWrapper"]
 unian.info,unian.net,unian.ua,vctr.media##.banner-container
 ! !!!!!!!!!!!!!!!
 24tv.ua##app-default-news.news-wrapper:has(app-custom-adv-label > div > div.custom-adv-label)
 24tv.ua##app-video-adv-block
-24tv.ua##div.adv-wrapper
 24tv.ua##div.video-dv-wrapper
 ain.ua,ain.business##.small-white-block
 ain.ua,ain.business##div[class^="big-ad-"]
@@ -68,11 +68,8 @@ fondy.ua##div.wpbs-ad-banner
 football.ua,ukurier.gov.ua##.banner
 football.ua##.banner ~ .separator
 football.ua##.top-banner
-football24.ua##.adv-insert
-football24.ua##aside[class*="adv-insert-"]
 football24.ua##div.next-article:has(div.custom-adv-label)
 football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
-football24.ua##p[class^="custom-adv-news-"]
 forbes.ua##div:has(> div[class*="modal-interact-with-background"])
 forbes.ua##div[id^="adpartner-"]
 gazeta.ua##.informer
@@ -119,7 +116,6 @@ sinoptik.ua##head > style:empty:style(all: inherit !important)
 slovoidilo.ua##div.branding-main
 slovoidilo.ua##div.te-center:has(ins.adsbygoogle)
 sport24.ua##app-default-news:has(app-adv-news-label)
-sport24.ua##div[class^="adv-wrapper"]
 storinka.com.ua##div.share
 storinka.com.ua##div.widget:not([class$="hidden-xs"])
 tabletki.ua##div.com__panel-container:has(a[rel*="sponsored"])
@@ -145,7 +141,6 @@ village.com.ua##.post-additions
 vogue.ua##div[id^="admixer_"]
 xsport.ua##.bookmaker-new
 yesport.com.ua##app-adv-placeholder
-zaxid.net##.adv-news-within
 zaxid.net##.news-list-col > .news-list
 zaxid.net##div[id^="slot300x"]
 zn.ua##[data-action="banners"]
