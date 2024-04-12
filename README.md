@@ -27,7 +27,7 @@ https://www.awwwwesome.org/data/filters/UF/annoyances.txt
 ```
 https://www.awwwwesome.org/data/filters/UF/privacy.txt
 ```
-
+> [!WARNING]
 > Цей фільтр видаляє скрипти та html-елементи систем коментування (Disqus, Facebook Comments Plugin тощо) на новинних та деяких інших сайтах. Якщо для вас це неприйнятно, не використовуйте цей фільтр.
 
 ### Ukrainian Security Filter (Український безпековий фільтр)
@@ -46,6 +46,7 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 
 Браузер Firefox підтримує роботу розширень і на мобільних пристроях, проте, розширення uBlock Origin працює лише на ОС Android. Тому альтернативою для мобільних пристроїв, що працюють на базі ОС Android та iOS, може стати використання браузера [Brave](https://brave.com/), який має власний модуль фільтрації контенту.
 
+> [!CAUTION]
 > Починаючи з версії 0.5, розробники розширення **Adblock** [вирішили прибрати](https://web.archive.org/web/20111206122411/http://adblockplus.org/en/faq_features#siteblock) функцію блокування веб-сторінок (strict blocking). Це означає, що ані **Adblock**, ані **Adblock Plus** не можуть блокувати доступ до шкідливих веб-ресурсів на рівні доменного ім'я. Розширення **AdGuard** так само має проблеми з обробкою правил фільтрації ([Issue #2760](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2760)), навіть тих, що прямо прописані в документації цього розширення. Відповідно, ці розширення не можуть забезпечити обробку правил фільтрації, що повністю відповідають вимогам сучасних версій синтаксису Adblock, тому вони не є сумісними з фільтром `Ukrainian Security Filter (Український безпековий фільтр)`.
 
 ### Як імпортувати фільтри
@@ -87,7 +88,7 @@ https://www.awwwwesome.org/data/filters/USF/adblock.txt
 При додаванні нових правил фільтрації до файлів ads.txt, annoyances.txt або privacy.txt, що містяться у директорії sandbox, слід керуватися наступними стандартами (стилями):
 
 ```adblock
-! Веб-адреса (URL-адреса) веб-ресурсу, щодо якого будуть застосовані правила фільтрації
+! Веб-адреса (URL-адреса) ресурсу, щодо якого будуть застосовані правила фільтрації
 example.com##rule1
 example.com##rule2
 example.com##rule3
