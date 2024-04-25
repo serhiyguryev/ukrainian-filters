@@ -9,7 +9,7 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 Фільтр видаляє рекламу з українських сайтів.
 
 ```
-https://www.awwwwesome.org/data/filters/UF/ads.txt
+https://raw.githubusercontent.com/serhiyguryev/ukrainian-filters/main/filters/ads.txt
 ```
 
 ### Ukrainian Annoyance Filter
@@ -17,7 +17,7 @@ https://www.awwwwesome.org/data/filters/UF/ads.txt
 Фільтр блокує дратівливі елементи на українських та деяких популярних іноземних сайтах (повідомлення про файли cookie, спливаючі вікна, банери тощо).
 
 ```
-https://www.awwwwesome.org/data/filters/UF/annoyances.txt
+https://raw.githubusercontent.com/serhiyguryev/ukrainian-filters/main/filters/annoyances.txt
 ```
 
 ### Ukrainian Privacy Filter
@@ -25,7 +25,7 @@ https://www.awwwwesome.org/data/filters/UF/annoyances.txt
 Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в Інтернеті.
 
 ```
-https://www.awwwwesome.org/data/filters/UF/privacy.txt
+https://raw.githubusercontent.com/serhiyguryev/ukrainian-filters/main/filters/privacy.txt
 ```
 > [!WARNING]
 > Цей фільтр видаляє скрипти та html-елементи систем коментування (Disqus, Facebook Comments Plugin тощо) на новинних та деяких інших сайтах. Якщо для вас це неприйнятно, не використовуйте цей фільтр.
@@ -35,7 +35,7 @@ https://www.awwwwesome.org/data/filters/UF/privacy.txt
 Це [фільтр шкідливих веб-ресурсів](https://github.com/braveinnovators/ukrainian-security-filter) (фішинг, онлайн-шахрайство, шкідливе програмне забезпечення тощо), що орієнтовані на громадян України.
 
 ```
-https://www.awwwwesome.org/data/filters/USF/adblock.txt
+https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt
 ```
 
 ## Сумісність з браузерами та розширеннями
