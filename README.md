@@ -98,7 +98,6 @@ example.com##rule3
 
 Ви можете підтримати подальший розвиток цього проекту, обравши зручний для вас спосіб перерахування донатів:
 
-* **Дебетова/кредитна картка**: [https://donatello.to/serhiyguryev](https://donatello.to/serhiyguryev)
 * **Bitcoin (BTC)**: bc1q6qtnwc2pdktvl48mr9hf0qmhaxfm7xseftp78a
 * **Ether (ETH)**: 0x185e4FB1f662223B011dedbBd42A444891b094f5
 
