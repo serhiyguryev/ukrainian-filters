@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 20240527.01
-! Last modified: Mon, 27 May 2024 14:46 EEST
+! Version: 20240604.01
+! Last modified: Tue, 04 June 2024 12:24 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -61,7 +61,6 @@ football24.ua##.comments_button:remove()
 football24.ua###comments-widget:remove()
 gazeta.ua##div.article:has(.comment-wrapper):remove()
 glavcom.ua##div.comments
-user/js/glavcom_komments.min.js$script,domain=glavcom.ua
 inforesist.org##.visible-lg:has(.ir-fb-show-comments):remove()
 isport.ua###phnx-onready_comments_templates-index:remove()
 itc.ua###itc-comments:remove()
@@ -71,6 +70,10 @@ pravda.com.ua##.post__comments:remove()
 pravda.com.ua##.post_comments:remove()
 slovoidilo.ua##.commentars:remove()
 speka.media##.comments:remove()
+sport.ua##div.comments.news-comments:remove()
+sport.ua##div#last-comments.comments-block
 ukurier.gov.ua##.article-comments:remove()
 xsport.ua###comment-block:remove()
 zn.ua##.comments-box:remove()
+! !!!!!!!!!!!!!!!
+user/js/glavcom_komments.min.js$script,domain=glavcom.ua
