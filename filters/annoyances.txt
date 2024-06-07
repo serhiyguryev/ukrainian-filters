@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)
-! Version: 20240604.01
-! Last modified: Tue, 04 June 2024 13:00 EEST
+! Version: 20240607.01
+! Last modified: Fri, 07 June 2024 19:15 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -111,6 +111,7 @@ behance.net###google-login-container
 behance.net##div[class^="Banner-bannerContainer"]
 behance.net##div[class^="FloatingChecklist"]
 deepl.com##.w-full:has(div[class^="ProBanner"])
+deepl.com##div.min-h-0.min-w-0:has(button[aria-label="Close"])
 deepl.com##div.p-8:has(aside[class^="Quotes-module"])
 deepl.com##div[data-testid="dl-cookieBanner"]
 deepl.com##main.relative.mx-auto > div.absolute.empty\:hidden
