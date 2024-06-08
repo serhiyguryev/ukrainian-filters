@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240604.01
-! Last modified: Tue, 04 June 2024 12:24 EEST
+! Version: 20240608.01
+! Last modified: Sat, 08 June 2024 19:47 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -111,7 +111,6 @@ liga.net##div.ad
 liga.net##div.article-footer__widget.b-blocks
 liga.net##div.article-footer__widget.b-subs
 mc.today##[data-coursestyle]
-megapeer.vip###adwile
 meta.ua##div[class^="banner-zone"]
 mezha.media##.block-novyny-partneriv
 mezha.media##div#wrapper > div:has(a.banner-link)
@@ -171,4 +170,37 @@ zaxid.net##div[id^="slot300x"]
 zn.ua##[data-action="banners"]
 zn.ua##div[class^="advertising"]
 ! !!!!!!!!!!!!!!!
+||adblocksosal.ru^$third-party
 ||megapeer.vip^$popup
+megapeer.vip###adwile
+pornolab.biz,pornolab.cc,pornolab.net##.site-logo:style(max-height: 70px !important; width: auto !important)
+pornolab.biz,pornolab.cc,pornolab.net###main_content_wrap > #latest_news > table[width="100%"] > tbody > tr > td[width="100%"] ~ *
+pornolab.biz,pornolab.cc,pornolab.net###main_content_wrap > #latest_news > table[width="100%"] > tbody > tr ~ *
+pornolab.biz,pornolab.cc,pornolab.net###main_content_wrap > table[width="100%"] > tbody > tr > td[width="100%"] ~ td
+pornolab.biz,pornolab.cc,pornolab.net###page_footer .vBottom[style]
+pornolab.biz,pornolab.cc,pornolab.net##^script:has-text('Math.random()*1000000000')
+pornolab.biz,pornolab.cc,pornolab.net##^script:has-text('var sOuter=')
+pornolab.biz,pornolab.cc,pornolab.net##div.bypass-alert
+pornolab.biz,pornolab.cc,pornolab.net##div.tCenter.nowrap.mrg_12
+pornolab.biz,pornolab.cc,pornolab.net##div.tCenter.nowrap.mrg_12 + div
+pornolab.biz,pornolab.cc,pornolab.net##div[id^="vsxshop"]:remove()
+pornolab.biz,pornolab.cc,pornolab.net##div#cookieNotice
+pornolab.biz,pornolab.cc,pornolab.net##div#pl-speedbar
+pornolab.biz,pornolab.cc,pornolab.net##table.splk3:has(td.rk):remove()
+pornolab.biz,pornolab.cc,pornolab.net##td.tCenter:has(> table.bCenter > tbody > tr > td div#bn-toy-1.tCenter.bCenter):remove()
+/store.everything.min.js$domain=fastpic.org|~new.fastpic.org
+||fastpic.org/*$csp=frame-src 'self'
+||fastpic.org/*$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' static.fastpic.org
+||fastpic.org/view/$script
+fastpic.org,~new.fastpic.org##+js(abort-current-inline-script, addEventListener, DOMContentLoaded)
+fastpic.org,~new.fastpic.org##+js(abort-current-inline-script, document.createElement, Math.random)
+fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMagic)
+fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, getexoloader)
+fastpic.org##.col-auto[style^="height:"]
+fastpic.org##.justify-content-center > .col[id]:style(max-width: max-content !important)
+fastpic.org##[class^="embed-responsive"]
+fastpic.org###mainContainer > div:not([id])
+fastpic.org##body > footer:style(background: none !important)
+fastpic.org##div[class*="vright"]
+fastpic.org##div[class^="spinner"] ~ .d-flex
+fastpic.org##main#mainContainer:style(max-width: unset !important)
