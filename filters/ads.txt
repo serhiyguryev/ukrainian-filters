@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240609.01 (24.06.1)
-! Last modified: Sun, 09 June 2024 17:50 EEST
+! Version: 20240609.02 (24.06.2)
+! Last modified: Sun, 09 June 2024 18:36 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -25,7 +25,7 @@
 ! SCRIPTS
 ! !!!!!!!!!!!!!!!
 !
-bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,gazeta.ua,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,nv.ua,pravda.com.ua,ukr.net##^script:has-text('"Shadow')
+bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,gazeta.ua,hvylya.net,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,nv.ua,pravda.com.ua,ukr.net##^script:has-text('"Shadow')
 football24.ua##^script:has-text('manageMembranaAdvWrappers')
 !
 ! !!!!!!!!!!!!!!!
@@ -171,7 +171,8 @@ ukrinform.ua##div.googleCompanion
 ukrinform.ua##div.partner
 unian.info,unian.net,unian.ua##.newsfeed__banner
 unian.info,unian.net,unian.ua##.partner-news
-unn.ua###ads-sidebar
+unn.ua##div[class^="informer_informer_"]
+unn.ua##div[id^="ads-sidebar"]
 village.com.ua##.post-additions
 vogue.ua##div[id^="admixer_"]
 xsport.ua##.bookmaker-new
