@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240608.04
-! Last modified: Sat, 08 June 2024 22:32 EEST
+! Version: 20240609.01 (24.06.1)
+! Last modified: Sun, 09 June 2024 17:50 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -13,8 +13,7 @@
 ! ADVERTISING NETWORKS
 ! !!!!!!!!!!!!!!!
 !
-||isatonabench.com^
-||sheisnotateacher.com^
+||a4.censor.net^
 ||exchange.informer.ua^$third-party
 ||mediabrama.com^$third-party
 ||receivedachest.com^$third-party
@@ -26,7 +25,7 @@
 ! SCRIPTS
 ! !!!!!!!!!!!!!!!
 !
-bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,gazeta.ua,i.ua,inforesist.org,isport.ua,liga.net,nv.ua,pravda.com.ua,ukr.net##^script:has-text('"Shadow')
+bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,gazeta.ua,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,nv.ua,pravda.com.ua,ukr.net##^script:has-text('"Shadow')
 football24.ua##^script:has-text('manageMembranaAdvWrappers')
 !
 ! !!!!!!!!!!!!!!!
@@ -53,6 +52,7 @@ apostrophe.ua##.advertinline
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
 censor.net##.right-sidebar div[style^="width: 300px; "]
+censor.net##div.container.d-print-none:has(script[src^="//a4.censor.net/js/"])
 champion.com.ua##div:has(> div.nts-ad)
 defence-ua.com##.share-news
 defence-ua.com##div.content > br:nth-of-type(-n+2)
@@ -115,6 +115,9 @@ liga.net##div.article-footer__widget.b-blocks
 liga.net##div.article-footer__widget.b-subs
 mc.today##[data-coursestyle]
 meta.ua##div[class^="banner-zone"]
+meteofor.com.ua##div.placeholder.h1:has(div[id^="div-gpt-ad-"])
+meteofor.com.ua##section.section-media:has(div[id^="div-gpt-ad-"])
+meteofor.com.ua##section.section-rss
 mezha.media##.block-novyny-partneriv
 mezha.media##div#wrapper > div:has(a.banner-link)
 nachasi.com##div.sticky-zone:has-text(Блоги компаній)
@@ -123,8 +126,13 @@ nachasi.com##div[id*="comments-"]
 nv.ua##div[id^="async_spec"]:has(section[data-type="advertising"])
 obozrevatel.com##.headerBiding
 obozrevatel.com##.videoOfDay
+obozrevatel.com##aside.asideBanner.--left
+obozrevatel.com##aside.asideBanner.--right
 obozrevatel.com##aside.headerBiding:has(div[class*="_970"]):remove()
+obozrevatel.com##div[id^="carouselLast-slide"]:has(article.newsImg > div.banner)
+obozrevatel.com##div[id^="carouselmostViewed-slide"]:has(article.newsImg > div.banner)
 pravda.com.ua##div.unit_bottom_banner:remove()
+prom.ua##div[style*="cloud-cgi/static/catalog-ui/js/build/portal-portable/maskWeb-5Wgei.png"]
 rbc.ua##.vidverto-wrapper
 rbc.ua##[id^="admixer-"]
 rbc.ua##[id^="bn_"]
@@ -172,38 +180,3 @@ zaxid.net##.news-list-col > .news-list
 zaxid.net##div[id^="slot300x"]
 zn.ua##[data-action="banners"]
 zn.ua##div[class^="advertising"]
-! !!!!!!!!!!!!!!!
-||adblocksosal.ru^$third-party
-||megapeer.vip^$popup
-megapeer.vip###adwile
-pornolab.biz,pornolab.cc,pornolab.net##.site-logo:style(max-height: 70px !important; width: auto !important)
-pornolab.biz,pornolab.cc,pornolab.net###main_content_wrap > #latest_news > table[width="100%"] > tbody > tr > td[width="100%"] ~ *
-pornolab.biz,pornolab.cc,pornolab.net###main_content_wrap > #latest_news > table[width="100%"] > tbody > tr ~ *
-pornolab.biz,pornolab.cc,pornolab.net###main_content_wrap > table[width="100%"] > tbody > tr > td[width="100%"] ~ td
-pornolab.biz,pornolab.cc,pornolab.net###page_footer .vBottom[style]
-pornolab.biz,pornolab.cc,pornolab.net##^script:has-text('Math.random()*1000000000')
-pornolab.biz,pornolab.cc,pornolab.net##^script:has-text('var sOuter=')
-pornolab.biz,pornolab.cc,pornolab.net##div.bypass-alert
-pornolab.biz,pornolab.cc,pornolab.net##div.tCenter.nowrap.mrg_12
-pornolab.biz,pornolab.cc,pornolab.net##div.tCenter.nowrap.mrg_12 + div
-pornolab.biz,pornolab.cc,pornolab.net##div[id^="vsxshop"]:remove()
-pornolab.biz,pornolab.cc,pornolab.net##div#cookieNotice
-pornolab.biz,pornolab.cc,pornolab.net##div#pl-speedbar
-pornolab.biz,pornolab.cc,pornolab.net##table.splk3:has(td.rk):remove()
-pornolab.biz,pornolab.cc,pornolab.net##td.tCenter:has(> table.bCenter > tbody > tr > td div#bn-toy-1.tCenter.bCenter):remove()
-/store.everything.min.js$domain=fastpic.org|~new.fastpic.org
-||fastpic.org/*$csp=frame-src 'self'
-||fastpic.org/*$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' static.fastpic.org
-||fastpic.org/view/$script
-fastpic.org,~new.fastpic.org##+js(abort-current-inline-script, addEventListener, DOMContentLoaded)
-fastpic.org,~new.fastpic.org##+js(abort-current-inline-script, document.createElement, Math.random)
-fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMagic)
-fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, getexoloader)
-fastpic.org##.col-auto[style^="height:"]
-fastpic.org##.justify-content-center > .col[id]:style(max-width: max-content !important)
-fastpic.org##[class^="embed-responsive"]
-fastpic.org###mainContainer > div:not([id])
-fastpic.org##body > footer:style(background: none !important)
-fastpic.org##div[class*="vright"]
-fastpic.org##div[class^="spinner"] ~ .d-flex
-fastpic.org##main#mainContainer:style(max-width: unset !important)
