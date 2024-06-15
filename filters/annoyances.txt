@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)
-! Version: 20240609.01 (24.06.2)
-! Last modified: Sun, 09 June 2024 18:36 EEST
+! Version: 20240615.01 (24.06.5)
+! Last modified: Sat, 15 June 2024 20:25 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -77,6 +77,7 @@ kyivstar.ua##div[class*="RegionalityPopover_regionality"]
 ligazakon.net##div.wrapper-banner-by-tag
 ligazakon.net##section#main_popup_modal
 mywatershop.com.ua##section.modal_cookies
+novyny.live##div.cookie.show
 olx.ua##div[data-testid="cookies-overlay__container"]
 portmone.com.ua##.ptm-banner__cat-fish
 portmone.com.ua##app-cookies-modal
@@ -117,11 +118,13 @@ deepl.com##div.min-h-0.min-w-0:has(button[aria-label="Close"])
 deepl.com##div.p-8:has(aside[class^="Quotes-module"])
 deepl.com##div[data-testid="dl-cookieBanner"]
 deepl.com##main.relative.mx-auto > div.absolute.empty\:hidden
+developer.chrome.com,web.dev##devsite-cookie-notification-bar
 developer.mozilla.org##.top-banner
 dribbble.com##.announcements
 dribbble.com##.sticky-pro-upsell-widget
 forbes.com###ketch-consent-overlay
 forbes.com###lanyard_root
+github.com###universe24_super_early_bird
 google.com##iframe#google-hats-survey
 itsfoss.com##.apester-unit
 mozilla.org##.mzp-c-sticky-promo
