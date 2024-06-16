@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240616.02 (24.06.7)
-! Last modified: Sun, 16 June 2024 15:08 EEST
+! Version: 20240616.03 (24.06.8)
+! Last modified: Sun, 16 June 2024 18:15 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -50,6 +50,9 @@ unian.info,unian.net,unian.ua,vctr.media##.banner-container
 24tv.ua##div.video-dv-wrapper
 ain.ua,ain.business##.small-white-block
 ain.ua,ain.business##div[class^="big-ad-"]
+ain.ua###subbody:style(top: 0 !important)
+ain.ua##body > *:style(pointer-events: auto !important)
+ain.ua##body:style(background-image: none !important; background-color: #eff1f2 !important; margin-top: 0 !important; pointer-events: none !important)
 apostrophe.ua##.advertinline
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
@@ -120,7 +123,9 @@ liga.net##article.is-partners
 liga.net##div.ad
 liga.net##div.article-footer__widget.b-blocks
 liga.net##div.article-footer__widget.b-subs
-mc.today##[data-coursestyle]
+mc.today##div.company-slider
+mc.today##div.mobile-hide:not(.widget-popular, .widget-popular-title):remove()
+mc.today##div.widget-vacancy
 meta.ua##div[class^="banner-zone"]
 meteofor.com.ua##div.placeholder.h1:has(div[id^="div-gpt-ad-"])
 meteofor.com.ua##section.section-media:has(div[id^="div-gpt-ad-"])
