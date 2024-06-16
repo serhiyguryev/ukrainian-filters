@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240615.01 (24.06.5)
-! Last modified: Sat, 15 June 2024 20:25 EEST
+! Version: 20240616.01 (24.06.6)
+! Last modified: Sun, 16 June 2024 14:35 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -27,6 +27,7 @@
 !
 bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,gazeta.ua,hvylya.net,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,nv.ua,pravda.com.ua,ukr.net##^script:has-text('"Shadow')
 football24.ua##^script:has-text('manageMembranaAdvWrappers')
+itc.ua##^script:has-text('/images/banners/')
 !
 ! !!!!!!!!!!!!!!!
 ! GENERAL RULES
@@ -40,6 +41,7 @@ football24.ua##^script:has-text('manageMembranaAdvWrappers')
 !
 24tv.ua,football24.ua,sport24.ua,zaxid.net##[class*="adv-"]
 chytomo.com,defence-ua.com,glavcom.ua,zn.ua##div[class^="banner"]
+dev.ua,itc.ua,xsport.ua##.partners
 football24.ua,zaxid.net##[id*="AdvWrapper"]
 unian.info,unian.net,unian.ua,vctr.media##.banner-container
 ! !!!!!!!!!!!!!!!
@@ -60,7 +62,6 @@ defence-ua.com##div.content > div.banner.text-center:remove()
 defence-ua.com##div.content > hr:nth-of-type(-n+2)
 defence-ua.com##div.text-center:has(ins)
 defence-ua.com##section[class^="banner"]
-dev.ua,itc.ua,xsport.ua##.partners
 dev.ua##.island[style^="padding: 2rem 0;"]
 dev.ua##.section-aside_sticky
 dumskaya.net##.hideprint
@@ -99,13 +100,18 @@ inforesist.org##.advert
 inforesist.org##.dw_focus_widget_news_ticker
 inforesist.org##.partners-adv
 itc.ua##.featured-statti:has(a[href*="/partnerskij-proekt/"])
-itc.ua##[data-bn-slot="ad-slot"]
-itc.ua##[data-course]
+itc.ua##div.hidden-sm:has(div[id*="-banner-"]):remove()
+itc.ua##div.hidden-sm:has(img[src*="/images/banners/"]):remove()
 itc.ua##div.jobs-vacancy
+itc.ua##div.sponsor
+itc.ua##div.visible-sm:has(div[id*="-banner-"]):remove()
 itc.ua##div[class*="widget-partners-blogs"]
 itc.ua##li.widget-container:has(.jobs-vacancy)
-itc.ua##li.widget-container:has(.partner-blog)
-itc.ua##li[id*="partner-posts"]
+itc.ua##li.widget-container:has(.partner-blog):remove()
+itc.ua##li.widget-sticky:has(div[id^="div-gpt-ad-"]):remove()
+itc.ua##li[class*="widget_execphp"]:remove()
+itc.ua##li[id^="partner-posts"]:remove()
+itc.ua##p.intro[style*="background: linear-gradient"]
 korrespondent.net##.article:has(em.advertising)
 korrespondent.net##.unit-side-informer
 korrespondent.net##div[class$="-banner"]
