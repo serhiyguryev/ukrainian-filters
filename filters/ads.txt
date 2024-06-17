@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240616.03 (24.06.8)
-! Last modified: Sun, 16 June 2024 18:15 EEST
+! Version: 20240618.01 (24.06.9)
+! Last modified: Tue, 18 June 2024 00:17 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -14,20 +14,28 @@
 ! !!!!!!!!!!!!!!!
 !
 ||a4.censor.net^
+||mediatraffic.com.ua^
+! !!!!!!!!!!!!!!!
+||cdn.umh.ua^$third-party
 ||exchange.informer.ua^$third-party
 ||mediabrama.com^$third-party
+||membrana.media^$third-party
 ||receivedachest.com^$third-party
 ||sinoptik.ua/informers_js.php?*$third-party
 ||smi.pp.ua^$third-party
 ||stteeruptowind.com^$third-party
+! !!!!!!!!!!!!!!!
+/^(?!.*(gravitec.media|gravitec.net)).*$/$xmlhttprequest,third-party,script,stylesheet,domain=football.ua
 !
 ! !!!!!!!!!!!!!!!
 ! SCRIPTS
 ! !!!!!!!!!!!!!!!
 !
 bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,gazeta.ua,hvylya.net,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,nv.ua,pravda.com.ua,ukr.net##^script:has-text('"Shadow')
+football.ua##^script:has-text(zone_)
 football24.ua##^script:has-text('manageMembranaAdvWrappers')
 itc.ua##^script:has-text('/images/banners/')
+zaxid.net##^script:has-text('mobileBrandingMainInited')
 !
 ! !!!!!!!!!!!!!!!
 ! GENERAL RULES
@@ -42,6 +50,7 @@ itc.ua##^script:has-text('/images/banners/')
 24tv.ua,football24.ua,sport24.ua,zaxid.net##[class*="adv-"]
 chytomo.com,defence-ua.com,glavcom.ua,zn.ua##div[class^="banner"]
 dev.ua,itc.ua,xsport.ua##.partners
+football.ua,ukurier.gov.ua##.banner
 football24.ua,zaxid.net##[id*="AdvWrapper"]
 unian.info,unian.net,unian.ua,vctr.media##.banner-container
 ! !!!!!!!!!!!!!!!
@@ -58,7 +67,8 @@ apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
 censor.net##.right-sidebar div[style^="width: 300px; "]
 censor.net##div.container.d-print-none:has(script[src^="//a4.censor.net/js/"])
-champion.com.ua##div:has(> div.nts-ad)
+champion.com.ua##div:has(> div > div.nts-ad)
+champion.com.ua##div.section_news_adv
 defence-ua.com##.share-news
 defence-ua.com##div.content > br:nth-of-type(-n+2)
 defence-ua.com##div.content > div.banner.text-center:remove()
@@ -77,9 +87,9 @@ euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
 focus.ua##div.o-block__inner:has(div[id*="ScriptRoot"])
 focus.ua##div.u-d-h-600:has(div[id*="ScriptRoot"])
 fondy.ua##div.wpbs-ad-banner
-football.ua,ukurier.gov.ua##.banner
 football.ua##.banner ~ .separator
 football.ua##.top-banner
+football.ua##div[id^="zone_"]:remove()
 football24.ua###adv_info_banner
 football24.ua##aside.adv-insert + div.media_embed
 football24.ua##aside.adv-insert + p:empty + div.responsive-embed
@@ -177,6 +187,14 @@ telegraf.com.ua##div[data-text="Новини партнерів"]
 texty.org.ua##.ad-banner-aside:remove()
 thepage.ua##div.news-list__item:has(div[class*="news-tag company_news"])
 thepage.ua##div.news-list__item:has(div[class*="news-tag partner_material"])
+tribuna.com##div.card__content > div:has(div[class*="Alternative_banner__"])
+tribuna.com##div.card__postscript-banners
+tribuna.com##div[class^="CommonLayout_common-layout__right-column_"]:has(div[class*="Alternative_banner__"])
+tribuna.com##div[class^="Home_home-page__right-column_"] > div:nth-of-type(-n+3)
+tribuna.com##div[class^="IdealMedia_ideal-media_"]
+tribuna.com##div[class^="Main_main-layout__empty-block_"]:has(div[class*="Alternative_banner__"])
+tribuna.com##div[class^="Main_main-layout__footer-wrapper__ads_"]
+tribuna.com##div#comments:remove()
 tsn.ua##.c-aside__port
 tsn.ua##aside.u-divider--t:has(iframe[src*="banners/partner-news?"])
 ua-football.com##.asside:has(div.topBook)
@@ -202,6 +220,8 @@ xsport.ua##.bookmaker-new
 yesport.com.ua##app-adv-placeholder
 zaxid.net##.news-list-col > .news-list
 zaxid.net##div[id^="slot300x"]
+zaxid.net##div#header_advt-wrapper
+zaxid.net##div#SinoptikInformer
 zn.ua##[data-action="banners"]
 zn.ua##aside.content__news > div:nth-of-type(n+2):nth-of-type(-n+6)
 zn.ua##div.after-material-wrap-banners
