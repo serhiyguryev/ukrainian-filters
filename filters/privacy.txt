@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 20240618.01 (24.06.9)
-! Last modified: Tue, 18 June 2024 00:17 EEST
+! Version: 20240618.01 (24.06.10)
+! Last modified: Tue, 18 June 2024 19:02 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -14,7 +14,7 @@
 ! !!!!!!!!!!!!!!!
 !
 ! facebook.com
-||connect.facebook.net^$third-party,domain=5.ua|ain.business|ain.ua|apostrophe.ua|armyinform.com.ua|bigmir.net|cert.gov.ua|chytomo.com|defence-ua.com|dumskaya.net|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|holosameryky.com|hvylya.net|imi.org.ua|inforesist.org|interfax.com.ua|ipay.ua|isport.ua|istpravda.com.ua|kyivpost.com|mc.today|mezha.net|mil.in.ua|nachasi.com|nv.ua|ostro.org|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|slovnyk.ua|slovoidilo.ua|storinka.com.ua|sud.ua|suspilne.media|tribuna.com|tsn.ua|ukrinform.ua|village.com.ua|xsport.ua|zaxid.net
+||connect.facebook.net^$third-party,domain=5.ua|ain.business|ain.ua|apostrophe.ua|armyinform.com.ua|bigmir.net|cert.gov.ua|chytomo.com|defence-ua.com|dumskaya.net|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|holosameryky.com|hvylya.net|imi.org.ua|inforesist.org|interfax.com.ua|ipay.ua|isport.ua|istpravda.com.ua|kyivpost.com|mc.today|mezha.net|mil.in.ua|nachasi.com|nv.ua|ostro.org|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|slovnyk.ua|slovoidilo.ua|sportanalytic.com|storinka.com.ua|sud.ua|suspilne.media|tribuna.com|tsn.ua|ukrinform.ua|village.com.ua|xsport.ua|zaxid.net
 ||graph.facebook.com^$third-party,domain=glavcom.ua|petrimazepa.com|platfor.ma|slovoidilo.ua|ukrinform.ua|universalbank.com.ua|zn.ua
 ||facebook.com/plugins/likebox.php?*$third-party,domain=fn.ua
 ||facebook.com/plugins/post.php?*$third-party,domain=radiosvoboda.org
@@ -64,6 +64,7 @@ glavcom.ua##div.comments
 inforesist.org##.visible-lg:has(.ir-fb-show-comments):remove()
 isport.ua###phnx-onready_comments_templates-index:remove()
 itc.ua###itc-comments:remove()
+konkurent.ua##div.comments_article:remove()
 kyivpost.com##.comments-block:remove()
 liga.net###fb-comm-block:remove()
 pravda.com.ua##.post__comments:remove()
@@ -72,6 +73,8 @@ slovoidilo.ua##.commentars:remove()
 speka.media##.comments:remove()
 sport.ua##div.comments.news-comments:remove()
 sport.ua##div#last-comments.comments-block
+sportanalytic.com##div.wblock:has-text(Коментарі)
+ua-football.com##div.own-comm-widget:remove()
 ukurier.gov.ua##.article-comments:remove()
 xsport.ua###comment-block:remove()
 zn.ua##.comments-box:remove()
