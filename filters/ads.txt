@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240618.01 (24.06.10)
-! Last modified: Tue, 18 June 2024 19:02 EEST
+! Version: 20240619.01 (24.06.11)
+! Last modified: Wed, 19 June 2024 17:08 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -86,6 +86,9 @@ epravda.com.ua,pravda.com.ua##div[class*="banner_"]:remove()
 epravda.com.ua,pravda.com.ua##div[class^="advtext"]:remove()
 epravda.com.ua##blockquote.club_banner
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
+fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"]):remove()
+fakty.com.ua##div.pip-video-wrapper
+fakty.com.ua##div[class^="promo-layer"]
 focus.ua##div.o-block__inner:has(div[id*="ScriptRoot"])
 focus.ua##div.u-d-h-600:has(div[id*="ScriptRoot"])
 fondy.ua##div.wpbs-ad-banner
@@ -204,7 +207,11 @@ tribuna.com##div[class^="Main_main-layout__empty-block_"]:has(div[class*="Altern
 tribuna.com##div[class^="Main_main-layout__footer-wrapper__ads_"]
 tribuna.com##div#comments:remove()
 tsn.ua##.c-aside__port
-tsn.ua##aside.u-divider--t:has(iframe[src*="banners/partner-news?"])
+tsn.ua##aside.u-divider--t:has(iframe[src*="/banners/partner-news"])
+tsn.ua##aside.u-hide--sdmd:has(> div:has-text(Реклама))
+tsn.ua##div.l-row.l-flex > div.l-col.l-col--sm.l-gap:has(aside.c-aside__port)
+tsn.ua##div.l-row.l-flex.u-fx--nowrap > div.l-gap.l-col.l-col--sm:has(aside.c-aside__port)
+tsn.ua##div[class*="-sidebar__gap"]:has(iframe[src="https://tsn.ua/banners/sidebar"])
 ua-football.com##.asside:has(div.topBook)
 ua-football.com##div.adl_cmp_consent-dialog-module_backdrop
 ua-football.com##li.gray-block.promo-btn__item
