@@ -1,7 +1,7 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240620.1 (24.06.13)
+! Version: 20240623.1 (24.06.14)
 ! Last modified: Wed, 19 June 2024 19:51 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
@@ -100,7 +100,7 @@ football.ua##div[id^="zone_"]:remove()
 football24.ua###adv_info_banner
 football24.ua##aside.adv-insert + div.media_embed
 football24.ua##aside.adv-insert + p:empty + div.responsive-embed
-football24.ua##aside.adv-insert + p:has(img[src*="828616_1421443.png"])
+football24.ua##aside.adv-insert + p:has(img)
 football24.ua##div.news-text > p:has(strong > a[rel*="sponsored"])
 football24.ua##div.next-article:has(div.custom-adv-label) aside.adv-insert + p:has(img)
 football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
