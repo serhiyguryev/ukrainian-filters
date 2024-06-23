@@ -2,7 +2,7 @@
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
 ! Version: 20240623.1 (24.06.14)
-! Last modified: Wed, 19 June 2024 19:51 EEST
+! Last modified: Sun, 23 June 2024 12:48 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
