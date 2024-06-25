@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240625.3 (24.06.19)
-! Last modified: Tue, 25 June 2024 17:48 EEST
+! Version: 20240625.4 (24.06.20)
+! Last modified: Tue, 25 June 2024 20:25 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -209,6 +209,7 @@ sud.ua##div.bbone-list
 tabletki.ua##div.com__panel-container:has(a[rel*="sponsored"])
 tabletki.ua##h3.com__panel-header:has-text('реклама')
 telegraf.com.ua##.tgr-ads
+telegraf.com.ua##div.s-content__ratio:has(script[id^="_vidverto-"]):remove()
 telegraf.com.ua##div[data-text="Новини партнерів"]
 texty.org.ua##.ad-banner-aside:remove()
 thepage.ua##div.news-list__item:has(div[class*="news-tag company_news"])
