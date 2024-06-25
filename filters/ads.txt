@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240625.1 (24.06.17)
-! Last modified: Tue, 25 June 2024 12:44 EEST
+! Version: 20240625.2 (24.06.18)
+! Last modified: Tue, 25 June 2024 13:43 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -51,7 +51,7 @@ zaxid.net##^script:has-text('mobileBrandingMainInited')
 buhgalter.com.ua,buhgalter911.com##div[data-ad="active"]:remove()
 chytomo.com,defence-ua.com,glavcom.ua,zn.ua##div[class^="banner"]
 dev.ua,itc.ua,xsport.ua##.partners
-football-ukraine.com,zaxid.net##div#SinoptikInformer
+football-ukraine.com,kyiv24.news,zaxid.net##div#SinoptikInformer
 football.ua,konkurent.ua,ukurier.gov.ua##.banner
 football24.ua,zaxid.net##[id*="AdvWrapper"]
 konkurent.ua,xsport.ua##div[class^="bookmaker"]
@@ -144,6 +144,9 @@ itc.ua##p.intro[style*="background: linear-gradient"]
 korrespondent.net##.article:has(em.advertising)
 korrespondent.net##.unit-side-informer
 korrespondent.net##div[class$="-banner"]
+kyiv24.news##.site-header:style(top: 0 !important)
+kyiv24.news##div.main-wrapper:style(margin-top: 0 !important)
+kyiv24.news##section.google-news
 kyivpost.com##div.section-title:has-text(Sponsored content)
 liga.net##article.is-partners
 liga.net##div.ad
