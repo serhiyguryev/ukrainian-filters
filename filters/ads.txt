@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240624.1 (24.06.16)
-! Last modified: Mon, 24 June 2024 19:44 EEST
+! Version: 20240625.1 (24.06.17)
+! Last modified: Tue, 25 June 2024 12:44 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -25,7 +25,7 @@
 ||smi.pp.ua^$third-party
 ||stteeruptowind.com^$third-party
 ! !!!!!!!!!!!!!!!
-/^(?!.*(gravitec.media|gravitec.net)).*$/$xmlhttprequest,third-party,script,stylesheet,domain=football.ua
+/^(?!.*(getsitecontrol.com|gravitec.media|gravitec.net)).*$/$xmlhttprequest,third-party,script,stylesheet,domain=buhgalter.com.ua|buhgalter911.com|football.ua
 !
 ! !!!!!!!!!!!!!!!
 ! SCRIPTS
@@ -48,6 +48,7 @@ zaxid.net##^script:has-text('mobileBrandingMainInited')
 ! !!!!!!!!!!!!!!!
 !
 24tv.ua,football24.ua,sport24.ua,zaxid.net##[class*="adv-"]
+buhgalter.com.ua,buhgalter911.com##div[data-ad="active"]:remove()
 chytomo.com,defence-ua.com,glavcom.ua,zn.ua##div[class^="banner"]
 dev.ua,itc.ua,xsport.ua##.partners
 football-ukraine.com,zaxid.net##div#SinoptikInformer
@@ -67,6 +68,11 @@ ain.ua##body:style(background-image: none !important; background-color: #eff1f2 
 apostrophe.ua##.advertinline
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
+buhgalter.com.ua,buhgalter911.com##body.access *:style(filter: none !important)
+buhgalter.com.ua,buhgalter911.com##body.access div[id^="access-au"]
+buhgalter.com.ua,buhgalter911.com##body.access:style(overflow: auto !important; position: relative !important)
+buhgalter.com.ua##div.rec
+buhgalter.com.ua##div#top-line
 censor.net##.right-sidebar div[style^="width: 300px; "]
 censor.net##div.container.d-print-none:has(script[src^="//a4.censor.net/js/"])
 champion.com.ua##div:has(> div > div.nts-ad)
@@ -105,6 +111,8 @@ football24.ua##div.news-text > p:has(strong > a[rel*="sponsored"])
 football24.ua##div.next-article:has(div.custom-adv-label) aside.adv-insert + p:has(img)
 football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
 football24.ua##p.cke-markup:has-text(Реклама:)
+football24.ua##ul:has(p.insert > b:has-text(Реклама))
+football24.ua##ul:has(p.insert > b:has-text(Реклама)) + p:has(img)
 forbes.ua##div:has(> div[class*="modal-interact-with-background"])
 forbes.ua##div[id^="adpartner-"]
 gazeta.ua##.informer
