@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240625.2 (24.06.18)
-! Last modified: Tue, 25 June 2024 13:43 EEST
+! Version: 20240625.3 (24.06.19)
+! Last modified: Tue, 25 June 2024 17:48 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -222,11 +222,13 @@ tribuna.com##div[class^="Main_main-layout__empty-block_"]:has(div[class*="Altern
 tribuna.com##div[class^="Main_main-layout__footer-wrapper__ads_"]
 tribuna.com##div#comments:remove()
 tsn.ua##.c-aside__port
+tsn.ua##aside.c-section:has(h2.c-section__title > a:has-text(Пресрелізи))
 tsn.ua##aside.u-divider--t:has(iframe[src*="/banners/partner-news"])
 tsn.ua##aside.u-hide--sdmd:has(> div:has-text(Реклама))
 tsn.ua##div.l-row.l-flex > div.l-col.l-col--sm.l-gap:has(aside.c-aside__port)
 tsn.ua##div.l-row.l-flex.u-fx--nowrap > div.l-gap.l-col.l-col--sm:has(aside.c-aside__port)
 tsn.ua##div[class*="-sidebar__gap"]:has(iframe[src="https://tsn.ua/banners/sidebar"])
+tsn.ua##section.c-section:has(h2.c-section__title:has-text(Новини партнерів))
 ua-football.com##.asside:has(div.topBook)
 ua-football.com##div.adl_cmp_consent-dialog-module_backdrop
 ua-football.com##li.gray-block.promo-btn__item
