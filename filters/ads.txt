@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240625.4 (24.06.20)
-! Last modified: Tue, 25 June 2024 20:25 EEST
+! Version: 20240626.1 (24.06.21)
+! Last modified: Wed, 26 June 2024 22:05 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -24,6 +24,7 @@
 ||sinoptik.ua/informers_js.php?*$third-party
 ||smi.pp.ua^$third-party
 ||stteeruptowind.com^$third-party
+||worldwidegg.com^$document,third-party
 ! !!!!!!!!!!!!!!!
 /^(?!.*(getsitecontrol.com|gravitec.media|gravitec.net)).*$/$xmlhttprequest,third-party,script,stylesheet,domain=buhgalter.com.ua|buhgalter911.com|football.ua
 !
@@ -111,6 +112,7 @@ football24.ua##div.news-text > p:has(strong > a[rel*="sponsored"])
 football24.ua##div.next-article:has(div.custom-adv-label) aside.adv-insert + p:has(img)
 football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
 football24.ua##p.cke-markup:has-text(Реклама:)
+football24.ua##p.insert:has(a[rel*="sponsored"])
 football24.ua##ul:has(p.insert > b:has-text(Реклама))
 football24.ua##ul:has(p.insert > b:has-text(Реклама)) + p:has(img)
 forbes.ua##div:has(> div[class*="modal-interact-with-background"])
