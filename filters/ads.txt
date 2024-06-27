@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240626.1 (24.06.21)
-! Last modified: Wed, 26 June 2024 22:05 EEST
+! Version: 20240627.1 (24.06.22)
+! Last modified: Thu, 27 June 2024 21:38 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -96,6 +96,9 @@ euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
 fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"]):remove()
 fakty.com.ua##div.pip-video-wrapper
 fakty.com.ua##div[class^="promo-layer"]
+flatfy.ua,lun.ua##div.DonateBanner
+flatfy.ua,lun.ua##div.feed-layout__item-holder:has(button[data-event-action="new_building_ads"])
+flatfy.ua,lun.ua##div.feed-layout__item-holder:has(div.bird-select-advertisement)
 focus.ua##div.o-block__inner:has(div[id*="ScriptRoot"])
 focus.ua##div.u-d-h-600:has(div[id*="ScriptRoot"])
 fondy.ua##div.wpbs-ad-banner
@@ -146,6 +149,8 @@ itc.ua##p.intro[style*="background: linear-gradient"]
 korrespondent.net##.article:has(em.advertising)
 korrespondent.net##.unit-side-informer
 korrespondent.net##div[class$="-banner"]
+krymr.com##div.media-block-wrap:has(h2:has-text(НОВИНИ ПАРТНЕРІВ)):remove()
+krymr.com##div.wsw__embed:has(div.promo)
 kyiv24.news##.site-header:style(top: 0 !important)
 kyiv24.news##div.main-wrapper:style(margin-top: 0 !important)
 kyiv24.news##section.google-news
@@ -189,6 +194,10 @@ prom.ua##div[style*="cloud-cgi/static/catalog-ui/js/build/portal-portable/maskWe
 rbc.ua##.vidverto-wrapper
 rbc.ua##[id^="admixer-"]
 rbc.ua##[id^="bn_"]
+rubryka.com##div.single-page__banners
+rubryka.com##div.single-page__social
+rubryka.com##div[class*="advertisment"]
+rubryka.com##div[style="padding: 0 0 30px"]
 sinoptik.ua##head > style:empty:style(all: inherit !important)
 slovoidilo.ua##div.branding-main
 slovoidilo.ua##div.te-center:has(ins.adsbygoogle)
@@ -263,3 +272,7 @@ zn.ua##aside.content__news > div:nth-of-type(n+2):nth-of-type(-n+6)
 zn.ua##div.after-material-wrap-banners
 zn.ua##div.recent-events:has(img[data-src$="telegram_.svg"])
 zn.ua##div[class^="advertising"]
+znaj.ua##.c-press-release
+znaj.ua##div.ai-placement
+znaj.ua##div.b-popular-article
+znaj.ua##div.subscribe-in-article
