@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240628.1 (24.06.23)
-! Last modified: Fri, 28 June 2024 11:30 EEST
+! Version: 20240702.1 (24.07.2)
+! Last modified: Tue, 02 July 2024 20:10 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -37,6 +37,7 @@ football.ua,football-ukraine.com,xsport.ua##^script:has-text(zone_)
 football24.ua##^script:has-text('manageMembranaAdvWrappers')
 itc.ua##^script:has-text('/images/banners/')
 zaxid.net##^script:has-text('mobileBrandingMainInited')
+zn.ua##^script:has-text('banners_types')
 !
 ! !!!!!!!!!!!!!!!
 ! GENERAL RULES
@@ -124,6 +125,9 @@ gazeta.ua##.informer
 gazeta.ua##a[href="#comments"]
 glavcom.ua##div.sunsite_actions[data-action="banners"]
 glavcom.ua##div.sunsite_actions[data-action="voteboxes"]
+hromadske.radio##div.banner-block
+hromadske.radio##div.banner-block-mb
+hromadske.radio##div.mobile-banner
 i.ua##.baner
 i.ua##.clear.logo_container
 i.ua##.news_premium_item
@@ -269,10 +273,10 @@ zaxid.net##.news-list-col > .news-list
 zaxid.net##div[id^="slot300x"]
 zaxid.net##div#header_advt-wrapper
 zn.ua##[data-action="banners"]
-zn.ua##aside.content__news > div:nth-of-type(n+2):nth-of-type(-n+6)
 zn.ua##div.after-material-wrap-banners
 zn.ua##div.recent-events:has(img[data-src$="telegram_.svg"])
 zn.ua##div[class^="advertising"]
+zn.ua##div[class^="banner_"]
 znaj.ua##.c-press-release
 znaj.ua##div.ai-placement
 znaj.ua##div.b-popular-article
