@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240709.1 (24.07.4)
-! Last modified: Tue, 09 July 2024 14:05 EEST
+! Version: 20240710.1 (24.07.5)
+! Last modified: Wed, 10 July 2024 20:15 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -100,8 +100,9 @@ fakty.com.ua##div[class^="promo-layer"]
 flatfy.ua,lun.ua##div.DonateBanner
 flatfy.ua,lun.ua##div.feed-layout__item-holder:has(button[data-event-action="new_building_ads"])
 flatfy.ua,lun.ua##div.feed-layout__item-holder:has(div.bird-select-advertisement)
-focus.ua##div.o-block__inner:has(div[id*="ScriptRoot"])
+focus.ua##div.o-block
 focus.ua##div.u-d-h-600:has(div[id*="ScriptRoot"])
+focus.ua##div[data-ad-title]:remove()
 fondy.ua##div.wpbs-ad-banner
 football-ukraine.com##div.view:has-text(РЕКЛАМА):remove()
 football-ukraine.com##div[class$="-ad"]:remove()
@@ -193,6 +194,7 @@ ostro.org##div.page-wrapper.hide-mob:has(div.container.page-container)
 ostro.org##div.press-reliz
 ostro.org##div[class^="banner-"]:remove()
 ostro.org##div[id^="banner-"]:remove()
+pravda.com.ua##article.article_widget.article_pr
 pravda.com.ua##div.unit_bottom_banner:remove()
 pravda.com.ua##div.unit_center_top_banner:has(> div.unit_center_banner > div.article > div.article_body > div.article_content > div.article_description:has-text(За підтримки))
 pravda.com.ua##div.unit_top-banner:remove()
