@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240713.2 (24.07.9)
-! Last modified: Sat, 13 July 2024 19:29 EEST
+! Version: 20240717.1 (24.07.10)
+! Last modified: Wed, 17 July 2024 23:45 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -77,8 +77,8 @@ buhgalter.com.ua##div.rec
 buhgalter.com.ua##div#top-line
 censor.net##.right-sidebar div[style^="width: 300px; "]
 censor.net##div.container.d-print-none:has(script[src^="//a4.censor.net/js/"])
-champion.com.ua##div:has(> div > div.nts-ad)
 champion.com.ua##div.section_news_adv
+champion.com.ua##div[class$="_banner"]
 defence-ua.com##.share-news
 defence-ua.com##div.content > br:nth-of-type(-n+2)
 defence-ua.com##div.content > div.banner.text-center:remove()
@@ -185,6 +185,7 @@ meteofor.com.ua##div.placeholder.h1:has(div[id^="div-gpt-ad-"])
 meteofor.com.ua##section.section-media:has(div[id^="div-gpt-ad-"])
 meteofor.com.ua##section.section-rss
 mezha.media##.block-novyny-partneriv
+mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
 mezha.media##div#wrapper > div:has(a.banner-link)
 nachasi.com##div.sticky-zone:has-text(Блоги компаній)
 nachasi.com##div.style_poster__MF3pg:has(.style_content__3CPKg)
@@ -204,6 +205,7 @@ ostro.org##div.press-reliz
 ostro.org##div[class^="banner-"]:remove()
 ostro.org##div[id^="banner-"]:remove()
 pravda.com.ua##article.article_widget.article_pr
+pravda.com.ua##div.article.article_sp
 pravda.com.ua##div.unit_bottom_banner:remove()
 pravda.com.ua##div.unit_center_top_banner:has(> div.unit_center_banner > div.article > div.article_body > div.article_content > div.article_description:has-text(За підтримки))
 pravda.com.ua##div.unit_top-banner:remove()
