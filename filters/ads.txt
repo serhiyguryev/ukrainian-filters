@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240717.1 (24.07.10)
-! Last modified: Wed, 17 July 2024 23:45 EEST
+! Version: 20240719.1 (24.07.11)
+! Last modified: Fri, 19 July 2024 12:11 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -98,6 +98,7 @@ dou.ua##div[id$="-adv-id"]
 dumskaya.net##.hideprint
 dumskaya.net##noindex
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]:remove()
+epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(PROMOTED))
 epravda.com.ua,pravda.com.ua##div[class*="adv_"]:remove()
 epravda.com.ua,pravda.com.ua##div[class*="banner_"]:remove()
 epravda.com.ua##blockquote.club_banner
@@ -198,6 +199,7 @@ obozrevatel.com##.videoOfDay
 obozrevatel.com##aside.asideBanner.--left
 obozrevatel.com##aside.asideBanner.--right
 obozrevatel.com##aside.headerBiding:has(div[class*="_970"]):remove()
+obozrevatel.com##div.recommendation
 obozrevatel.com##div[id^="carouselLast-slide"]:has(article.newsImg > div.banner)
 obozrevatel.com##div[id^="carouselmostViewed-slide"]:has(article.newsImg > div.banner)
 ostro.org##div.page-wrapper.hide-mob:has(div.container.page-container)
@@ -206,6 +208,7 @@ ostro.org##div[class^="banner-"]:remove()
 ostro.org##div[id^="banner-"]:remove()
 pravda.com.ua##article.article_widget.article_pr
 pravda.com.ua##div.article.article_sp
+pravda.com.ua##div.promoted_article
 pravda.com.ua##div.unit_bottom_banner:remove()
 pravda.com.ua##div.unit_center_top_banner:has(> div.unit_center_banner > div.article > div.article_body > div.article_content > div.article_description:has-text(За підтримки))
 pravda.com.ua##div.unit_top-banner:remove()
