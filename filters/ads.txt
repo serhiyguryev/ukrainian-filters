@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240726.1 (24.07.20)
-! Last modified: Fri, 26 July 2024 11:26 EEST
+! Version: 20240726.1 (24.07.21)
+! Last modified: Fri, 26 July 2024 17:56 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -32,7 +32,14 @@
 ! SCRIPTS
 ! !!!!!!!!!!!!!!!
 !
+||*content-loader.com/*^$script
+||*css-load.com/*^$script
+||*html-load.com/*^$script
+||*img-load.com/*^$script
+||*error-report.com/*^$document,subdocument,xmlhttprequest,script
+! !!!!!!!!!!!!!!!
 bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,football-ukraine.com,gazeta.ua,hvylya.net,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,nv.ua,pravda.com.ua,sportanalytic.com,ukr.net##^script:has-text('"Shadow')
+eurointegration.com.ua##^script[onload*="error-report.com"]
 football.ua,football-ukraine.com,xsport.ua##^script:has-text(zone_)
 football24.ua##^script:has-text('manageMembranaAdvWrappers')
 itc.ua##^script:has-text('/images/banners/')
@@ -78,6 +85,7 @@ buhgalter.com.ua##div#top-line
 censor.net##.right-sidebar div[style^="width: 300px; "]
 censor.net##div.container.d-print-none:has(script[src^="//a4.censor.net/js/"])
 champion.com.ua##div.section_news_adv
+champion.com.ua##div[class*="_banner_"]
 champion.com.ua##div[class$="_banner"]
 defence-ua.com##.share-news
 defence-ua.com##div.content > br:nth-of-type(-n+2)
@@ -102,6 +110,8 @@ epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(PROMOTED))
 epravda.com.ua,pravda.com.ua##div[class*="adv_"]:remove()
 epravda.com.ua,pravda.com.ua##div[class*="banner_"]:remove()
 epravda.com.ua##blockquote.club_banner
+eurointegration.com.ua##a[href="https://www.ukr.net/"]
+eurointegration.com.ua##div.unit_header-banner
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
 fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"]):remove()
 fakty.com.ua##div.pip-video-wrapper
@@ -294,6 +304,7 @@ unn.ua##div[class^="informer_informer_"]
 unn.ua##div[id^="ads-sidebar"]
 village.com.ua##.post-additions
 vogue.ua##div[id^="admixer_"]
+work.ua##div.card:has(div.gamification-progress-content)
 xsport.ua##div.site:style(margin-top: 20px !important)
 yesport.com.ua##app-adv-placeholder
 zaxid.net##.news-list-col > .news-list
@@ -308,4 +319,3 @@ znaj.ua##.c-press-release
 znaj.ua##div.ai-placement
 znaj.ua##div.b-popular-article
 znaj.ua##div.subscribe-in-article
-work.ua##div.card:has(div.gamification-progress-content)
