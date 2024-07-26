@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 20240709.1 (24.07.4)
-! Last modified: Tue, 09 July 2024 14:05 EEST
+! Version: 20240726.1 (24.07.21)
+! Last modified: Fri, 26 July 2024 17:56 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -14,7 +14,7 @@
 ! !!!!!!!!!!!!!!!
 !
 ! facebook.com
-||connect.facebook.net^$third-party,domain=5.ua|ain.business|ain.ua|apostrophe.ua|armyinform.com.ua|bigmir.net|cert.gov.ua|chytomo.com|defence-ua.com|dumskaya.net|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|holosameryky.com|hvylya.net|imi.org.ua|inforesist.org|interfax.com.ua|ipay.ua|isport.ua|istpravda.com.ua|kyiv24.news|kyivindependent.com|kyivpost.com|mc.today|mezha.net|mil.in.ua|nachasi.com|nv.ua|ostro.org|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|rubryka.com|slovnyk.ua|slovoidilo.ua|sportanalytic.com|storinka.com.ua|sud.ua|suspilne.media|tribuna.com|tsn.ua|ukrinform.ua|village.com.ua|xsport.ua|zaxid.net
+||connect.facebook.net^$third-party,domain=5.ua|ain.business|ain.ua|apostrophe.ua|armyinform.com.ua|bigmir.net|cert.gov.ua|champion.com.ua|chytomo.com|defence-ua.com|dumskaya.net|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|holosameryky.com|hvylya.net|imi.org.ua|inforesist.org|interfax.com.ua|ipay.ua|isport.ua|istpravda.com.ua|kyiv24.news|kyivindependent.com|kyivpost.com|mc.today|mezha.net|mil.in.ua|nachasi.com|nv.ua|ostro.org|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|rubryka.com|slovnyk.ua|slovoidilo.ua|sportanalytic.com|storinka.com.ua|sud.ua|suspilne.media|tribuna.com|tsn.ua|ukrinform.ua|village.com.ua|xsport.ua|zaxid.net
 
 ||graph.facebook.com^$third-party,domain=glavcom.ua|petrimazepa.com|platfor.ma|slovoidilo.ua|ukrinform.ua|universalbank.com.ua|zn.ua
 ||facebook.com/plugins/likebox.php?*$third-party,domain=fn.ua
@@ -48,7 +48,7 @@ bigmir.net##div.widget:has(div.widget-socials):remove()
 ! COMMENTS
 ! !!!!!!!!!!!!!!!
 !
-5.ua,apostrophe.ua,interfax.com.ua,mil.in.ua##.fb-comments:remove()
+5.ua,apostrophe.ua,champion.com.ua,interfax.com.ua,mil.in.ua##.fb-comments:remove()
 dev.ua,mezha.media,radiosvoboda.org###comments:remove()
 espreso.tv,zaxid.net##.facebook-comments:remove()
 ! !!!!!!!!!!!!!!!
@@ -56,7 +56,6 @@ espreso.tv,zaxid.net##.facebook-comments:remove()
 9to5linux.com###disqus_thread:remove()
 bigmir.net##div#phnx-onready_comments_templates-index:remove()
 censor.net##.news-comments-wrapp:remove()
-champion.com.ua##div.comments:remove()
 defence-ua.com###comments_container:remove()
 epravda.com.ua##.block_comments:remove()
 football.ua###commentsArea:remove()
