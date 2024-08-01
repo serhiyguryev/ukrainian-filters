@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240729.2 (24.07.24)
-! Last modified: Mon, 29 July 2024 16:46 EEST
+! Version: 20240801.1 (24.08.1)
+! Last modified: Thu, 01 August 2024 23:55 EEST
 ! Expires: 5 days
 ! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
 !
@@ -106,11 +106,11 @@ dou.ua##div[id$="-adv-id"]
 dumskaya.net##.hideprint
 dumskaya.net##noindex
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]:remove()
+epravda.com.ua,pravda.com.ua##blockquote.club_banner
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(PROMOTED))
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(АНОНС))
 epravda.com.ua,pravda.com.ua##div[class*="adv_"]:remove()
 epravda.com.ua,pravda.com.ua##div[class*="banner_"]:remove()
-epravda.com.ua##blockquote.club_banner
 eurointegration.com.ua##a[href="https://www.ukr.net/"]
 eurointegration.com.ua##div.unit_header-banner
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
@@ -228,7 +228,7 @@ ostro.org##div.page-wrapper.hide-mob:has(div.container.page-container)
 ostro.org##div.press-reliz
 ostro.org##div[class^="banner-"]:remove()
 ostro.org##div[id^="banner-"]:remove()
-pravda.com.ua##article.article_widget.article_pr
+pravda.com.ua##article.article_pr
 pravda.com.ua##div.article.article_sp
 pravda.com.ua##div.promoted_article
 pravda.com.ua##div.unit_bottom_banner:remove()
