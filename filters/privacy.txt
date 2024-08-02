@@ -1,3 +1,4 @@
+! Redirect: https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
